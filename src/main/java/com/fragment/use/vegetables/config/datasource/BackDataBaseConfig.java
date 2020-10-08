@@ -16,8 +16,6 @@ import javax.sql.DataSource;
 import java.sql.SQLException;
 
 /**
- * @Author: zeroJun
- * @Date: 2018/8/16 16:49
  * @Description: 后台数据源配置类
  */
 
@@ -28,7 +26,7 @@ public class BackDataBaseConfig {
     /**
      * dao层的包路径
      */
-    static final String PACKAGE = "cn.bulaomeng.fragment.mapper.slave";
+    static final String PACKAGE = "com.fragment.use.vegetables.mapper.slave";
 
     /**
      * mapper文件的相对路径

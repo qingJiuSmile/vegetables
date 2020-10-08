@@ -25,10 +25,10 @@ primary:
   datasource:
     #druid相关配置
     druid:
-      driverClassName: org.postgresql.Driver
+      driverClassName: com.mysql.cj.jdbc.Driver
       password: root
-      url: jdbc:postgresql://localhost:5432/postgres
-      username: postgres
+      url: jdbc:mysql://localhost:3306/vegetable?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+      username: root
       #配置初始化大小/最小/最大
       initialSize: 1
       minIdle: 1
@@ -54,10 +54,10 @@ primary:
 second:
   datasource:
     druid:
-      driverClassName: org.postgresql.Driver
+      driverClassName: com.mysql.cj.jdbc.Driver
       password: root
-      url: jdbc:postgresql://localhost:5432/postgres
-      username: postgres
+      url: jdbc:mysql://localhost:3306/vegetable?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+      username: root
       #配置初始化大小/最小/最大
       initialSize: 1
       minIdle: 1

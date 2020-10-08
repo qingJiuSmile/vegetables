@@ -17,7 +17,6 @@ import javax.sql.DataSource;
 import java.sql.SQLException;
 
 /** 主数据源配置
- * @author tjy
  * @date 2018/8/16 16:49
  **/
 @Configuration
@@ -28,7 +27,7 @@ public class PrimaryDataBaseConfig {
     /**
      * dao层的包路径
      */
-    static final String PACKAGE = "cn.bulaomeng.fragment.mapper.master";
+    static final String PACKAGE = "com.fragment.use.vegetables.mapper.master";
 
     /**
      * mapper文件的相对路径

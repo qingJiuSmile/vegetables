@@ -25,7 +25,7 @@ public class SwaggerConf {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("cn.bulaomeng.fragment.web"))
+                .apis(RequestHandlerSelectors.basePackage("com.fragment.use.vegetables.web"))
                 .paths(PathSelectors.any())
                 .build();
     }
@@ -33,8 +33,6 @@ public class SwaggerConf {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("springboot利用swagger构建api文档")
-                .description("不老梦swagger，http://blog.csdn.net/saytime")
-                .termsOfServiceUrl("http://blog.csdn.net/saytime")
                 .version("1.0")
                 .build();
     }
